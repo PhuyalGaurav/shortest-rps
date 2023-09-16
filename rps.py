@@ -1,0 +1,3 @@
+import random
+user_action, bot_action = input("enter your choice between r,p,s: "),random.choice(["r","p", "s"])
+print("Vayena k lekheko, tait!" if user_action not in ["r", "p", "s"] else f"Draw, bot choose : {bot_action}" if (bot_action =="r" and user_action =="p") or (bot_action =="s" and user_action =="p") or (bot_action =="r" and user_action =="s") else f"You won, bot choose : {bot_action}" if (bot_action =="p" and user_action =="r") or (bot_action =="p" and user_action =="s") or (bot_action =="s" and user_action =="r") else f"Draw, bot choose : {bot_action}")
